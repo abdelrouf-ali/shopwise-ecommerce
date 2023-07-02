@@ -15,5 +15,10 @@ export class ProductsService {
       return this.http.get<any[]>('https://fakestoreapi.com/products');
       
     }
+
+    getProduct(productId: number): Observable<any> {
+      const url = `${this.apiUrl}/${productId}`;
+      return this.http.get<any>(url);
+    }
    
 }
