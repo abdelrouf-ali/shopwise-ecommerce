@@ -5,6 +5,8 @@
     <div *ngFor="let product of products" style="width: 18rem;">
       <img [src]="product.image" [alt]="product.title" class="card-img-top" >
       <div class="card-body">
+
+        <h5 class="card-title"><a [routerLink]="['/products', product.id]">{{ product.title }}</a></h5>
         <h5 class="card-title">Price: {{ product.price }}</h5>
         <p class="card-text">Category: {{ product.category }}</p>
         <!-- <p>Description: {{ product.description }}</p> -->
