@@ -8,6 +8,9 @@ export class LoginService {
   constructor(public _HttpClient:HttpClient) { }
 
   register(data:any){
-    return this._HttpClient.post("http://127.0.0.1:8000/api/register",data)
+    return this._HttpClient.post("https://fakestoreapi.com/users",data)
+  }
+  login(data:any){
+    return this._HttpClient.post("https://fakestoreapi.com/auth/login",data)
   }
 }

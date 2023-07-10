@@ -36,10 +36,10 @@
             <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+       <button routerLink="cart" class="btn btn-brimary">
+           <i style="font-size: 30px;" class="fas faa-cart-plus"></i>
+           <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+       </button>
       </div>
     </div>
   </nav>

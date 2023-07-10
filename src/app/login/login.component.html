@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="container">
+    <H1>LOGIN</H1>
+    <div class="row">
+       <div class="col-md-6" >
+        <form class="form-group"[formGroup]="login" (ngSubmit)="send()" style="width: 30rem;">
+         
+            <div >
+                <label for="username" class="form-label">Username</label>
+                <input type="text" formControlName="username" class="form-control" id="Username" placeholder="Username">
+            </div>
+            <div >
+                <label for="password" class="form-label">Password</label>
+                <input type="password" formControlName="password" class="form-control" id="Password" placeholder="Password">
+            </div>
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                <label class="form-check-label" for="form5Example3">
+                  Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+              </div>
+            
+            <div >
+                <input type="submit" class="btn btn-outline-danger"  style="width: 30rem;">
+            </div>
+        </form> 
+       </div>
+    </div>
+</div>
