@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './products/products.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -16,12 +19,15 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     HomeComponent,
     ProductsComponent,
     NavbarComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
