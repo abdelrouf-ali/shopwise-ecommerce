@@ -1,0 +1,12 @@
+.carousel-content{
+    position: absolute;
+    top: 21%;
+    left: 5%;
+}
+
+.carousel-content h5 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
