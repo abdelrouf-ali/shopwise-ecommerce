@@ -18,7 +18,7 @@ export class CartService {
 
   setProduct(product : any){
     this.cartItemList.push(...product);
-    this.productList.next(product)
+    this.productList.next(product);
     
   }
 
@@ -26,7 +26,7 @@ export class CartService {
     this.cartItemList.push(product);
     this.productList.next(this.cartItemList);
     this.getTotalPrice();
-    console.log(this.cartItemList)
+    console.log(this.cartItemList);
   }
   getTotalPrice() : number{
     let grandTotal = 0;
@@ -41,6 +41,10 @@ export class CartService {
         this.cartItemList.splice(index,1);
       }
     })
+  }
+  removeAllcart(){
+    this.cartItemList = []
+    this.productList.next (this.cartItemList);
   }
 
 
