@@ -12,6 +12,9 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
+import { HeroCarouselComponent } from './hero-carousel/hero-carousel.component';
+import { SuppServicesComponent } from './supp-services/supp-services.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { CartComponent } from './cart/cart.component';
     ProductDetailsComponent,
     RegisterComponent,
     LoginComponent,
-    CartComponent
+    CartComponent,
+    HeroCarouselComponent,
+    SuppServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
