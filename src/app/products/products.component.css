@@ -5,4 +5,24 @@
 .card{
 padding: 10px;
 margin: 20px;
+display: flex;
+align-items: center;
+
+}
+
+.btn{
+    padding: 13px;
+    border-radius: 20px;
+    width: 13rem;
+}
+.c-t{
+    color: rgb(236, 36, 36);
+}
+.card-title a{
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+}
+.card-title a:hover{
+    color: rgb(219, 29, 29);
 }

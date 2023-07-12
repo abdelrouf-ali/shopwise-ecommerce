@@ -15,6 +15,7 @@ import { CartComponent } from './cart/cart.component';
 import { HeroCarouselComponent } from './hero-carousel/hero-carousel.component';
 import { SuppServicesComponent } from './supp-services/supp-services.component';
 import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
