@@ -1,15 +1,19 @@
 
 <div class="container ">
   
-  <div class="row " >
+  <div class="row justify-content-evenly" >
     <ng-container *ngFor="let product of productList">
-      <div  class="card col-md-3"style="width: 18rem;">
-        <img [src]="product.image" [alt]="product.title" class="card-img-top" >
-        <div class="card-body">
+      <div  class="card col-md-3  product-card" style="width: 18rem;">
+
+          <div class="product-img">
+            <img [src]="product.image" [alt]="product.title" class="card-img-top" >
+          </div>        
+          
+          <div class="card-body text-center">
   
-          <h5 class="card-title"><a [routerLink]="['/products', product.id]">{{ product.title }}</a></h5>
-          <h5 class="card-title c-t"> ${{ product.price }}</h5>
-          <p class="card-text">Category: {{ product.category }}</p>
+          <h5 class="card-title fs-6 mb-3"><a [routerLink]="['/products', product.id]">{{ product.title }}</a></h5>
+          <h5 class="card-title c-t fs-5 mb-4"> ${{ product.price }}</h5>
+          <!-- <p class="card-text">Category: {{ product.category }}</p> -->
           <button type="button" class="btn btn-outline-danger" (click)=addtocart(product)>add to cart</button>
         </div>
       </div>
