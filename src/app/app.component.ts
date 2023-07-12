@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {faCoffee} from '@fortawesome/free-solid-svg-icons'
 
 
 @Component({
@@ -8,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+  icon=faCoffee;
 }
