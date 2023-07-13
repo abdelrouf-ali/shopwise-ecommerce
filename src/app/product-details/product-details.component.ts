@@ -2,7 +2,7 @@ import { ProductsService } from './../services/products.service';
 import { Component , OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from './../services/cart.service';
-import {faStar} from '@fortawesome/free-solid-svg-icons'
+import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -14,7 +14,7 @@ import {faStar} from '@fortawesome/free-solid-svg-icons'
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
-  icon=faStar;
+  Star=faStar;
   product: any;
 
   constructor(
