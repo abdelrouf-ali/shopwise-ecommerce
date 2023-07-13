@@ -11,14 +11,19 @@ import {faStar} from '@fortawesome/free-solid-svg-icons';
 })
 export class ProductsComponent implements OnInit {
 
-  isHovered: boolean = false;
+  productList: any[] = [
+    // Your product list
+  ];
 
+  isHovered: boolean[] = [];
 
   Star=faStar;
   
-  public productList : any ;
+  // public productList : any ;
 
-  constructor(private productsService: ProductsService, private CartService:CartService) { }
+  constructor(private productsService: ProductsService, private CartService:CartService) {
+    this.isHovered = Array(this.productList.length).fill(false);
+   }
 
   ngOnInit(): void {
     this.productsService.getProducts().subscribe(res=>{
