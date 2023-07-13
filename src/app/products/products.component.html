@@ -1,30 +1,29 @@
 
-<div class="container ">
-  
-  <div class="row justify-content-evenly" >
-    <ng-container *ngFor="let product of productList">
-      
-      <div class="card col-md-3 product-card" style="width: 18rem;" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+<div class="container">
+  <div class="row justify-content-evenly">
+    <ng-container *ngFor="let product of productList; let i = index">
+      <div class="card col-md-3 product-card" style="width: 18rem;" 
+        (mouseenter)="isHovered[i] = true" 
+        (mouseleave)="isHovered[i] = false">
         <div class="product-img">
           <img [src]="product.image" [alt]="product.title" class="card-img-top">
         </div>
         
         <div class="card-body text-center">
-          <h5 class="card-title fs-6 mb-3 ">
+          <h5 class="card-title fs-6 mb-3" >
             <a [routerLink]="['/products', product.id]">{{ product.title }}</a>
           </h5>
-          <h5 class="card-title c-t fs-5 mb-3" [ngClass]="{ 'hidden': isHovered }">$ {{ product.price }}</h5>
-          <div class="five-stars" [ngClass]="{ 'hidden': isHovered }">
+          <h5 class="card-title c-t fs-5 mb-3" [class.hidden]="isHovered[i]">$ {{ product.price }}</h5>
+          <div class="five-stars" [class.hidden]="isHovered[i]">
             <fa-icon [icon]="Star"></fa-icon>
             <fa-icon [icon]="Star"></fa-icon>
             <fa-icon [icon]="Star"></fa-icon>
             <fa-icon [icon]="Star"></fa-icon>
             <fa-icon [icon]="Star"></fa-icon>
           </div>
-          <button type="button" class="btn btn-outline-danger" [class.hidden]="!isHovered" (click)="addtocart(product)">Add to Cart</button>
+          <button type="button" class="btn btn-outline-danger mt-2" [class.hidden]="!isHovered[i]" (click)="addtocart(product)">Add to Cart</button>
         </div>
       </div>
-
     </ng-container>
   </div>
 </div>
