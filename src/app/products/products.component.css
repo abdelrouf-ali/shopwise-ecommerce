@@ -28,3 +28,11 @@ border-radius: 10px !important;
 .card-title a:hover{
     color: rgb(219, 29, 29);
 }
+
+.five-stars{
+    color: gold;
+}
+
+.hidden {
+    display: none;
+  }

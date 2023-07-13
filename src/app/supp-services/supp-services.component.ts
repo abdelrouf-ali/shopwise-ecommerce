@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faTruckFast, faMoneyBill1Wave, faHeadset, faCreditCard  } from '@fortawesome/free-solid-svg-icons';
+import { faTruckFast, faMoneyBill1Wave, faHeadset, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({

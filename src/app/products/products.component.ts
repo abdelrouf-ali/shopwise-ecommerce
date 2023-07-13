@@ -1,6 +1,7 @@
 import { CartService } from './../services/cart.service';
 import { ProductsService } from '../services/products.service';
 import { Component, OnInit} from '@angular/core';
+import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -10,6 +11,11 @@ import { Component, OnInit} from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  isHovered: boolean = false;
+
+
+  Star=faStar;
+  
   public productList : any ;
 
   constructor(private productsService: ProductsService, private CartService:CartService) { }
