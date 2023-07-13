@@ -1,6 +1,10 @@
 import { ProductsService } from './../services/products.service';
 import { Component , OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from './../services/cart.service';
+import {faStar} from '@fortawesome/free-solid-svg-icons'
+
+
 
 
 
@@ -10,11 +14,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+  icon=faStar;
   product: any;
 
   constructor(
     private productsService: ProductsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private CartService:CartService
+
+    
   ) { }
 
   ngOnInit(): void {
@@ -30,4 +38,9 @@ export class ProductDetailsComponent implements OnInit {
       );
     });
   }
+  addtocart(product:any){
+    this.CartService.addtoCart(product);
+
+
+}
 }
