@@ -1,0 +1,99 @@
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+
+}
+.left{
+    width: 50%;
+}
+.big-img{
+    width: 250px;
+}
+.big-img img{
+    width: inherit;
+}
+.images{
+  display:flex;
+  justify-content: space-between ; 
+  width: 50%;
+  margin-top: 15px;
+}
+.small-img{
+    width: 60px;
+    overflow: hidden;
+    border: 1px solid rgb(248, 13, 13);
+}
+.small-img img {
+    width: inherit;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+.small-img:hover img {
+    transform: scale(1.2);
+}
+
+.url{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.p-name{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.p-name:hover{
+    color: red;
+}
+.ratings fa-icon {
+    color: gold;
+}
+.price{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: rgb(231, 63, 63);
+}
+.size{
+    display: flex;
+    align-items: center;
+    margin:20px 0 ;
+}
+.psize p {
+    font-size:18px ;
+    font-weight: 600;
+}
+.psize{
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #d6d0d0;
+    text-align: center;
+    margin: 0 10px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
