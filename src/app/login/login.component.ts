@@ -1,6 +1,7 @@
 import { LoginService } from './../services/login.service';
 import { Component } from '@angular/core';
 import { FormGroup,FormControl } from '@angular/forms';
+import{Router} from '@angular/router'
 
 
 
@@ -10,7 +11,7 @@ import { FormGroup,FormControl } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(public _LoginService:LoginService){}
+  constructor(public _LoginService:LoginService,public _Router:Router){}
   
   login =new FormGroup({
 
@@ -20,8 +21,10 @@ export class LoginComponent {
 
 })
 send(){
-  this._LoginService.login(this.login.value).subscribe((res)=>{
-    console.log(res)
+  this._LoginService.login(this.login.value).subscribe((res:any)=>{
+    localStorage.setItem("angular_token",res.token)
+    this._Router.navigate(["/products"])
+    console.log(res.token)
 
   })
  
