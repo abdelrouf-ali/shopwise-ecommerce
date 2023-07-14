@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SaleSectionComponent } from './sale-section/sale-section.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MultiItemCarouselComponent } from './multi-item-carousel/multi-item-carousel.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     FooterComponent,
     SaleSectionComponent,
     UserProfileComponent,
+    MultiItemCarouselComponent,
     
   ],
   imports: [
