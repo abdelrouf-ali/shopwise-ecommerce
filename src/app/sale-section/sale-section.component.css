@@ -16,7 +16,9 @@
     z-index: 9;
     width: 40%;
 }
-
+.sale-banner{
+    overflow: hidden;
+}
 
 .sale-banner:hover img{
     transform: scale(1.06);
@@ -27,4 +29,14 @@
 
     transition: all 0.3s ease-in-out;
 
+}
+.single_bn_title{
+    font-weight: 700;
+}
+.single_bn_link{
+    color: black;
+text-decoration-color: brown;
+}
+.single_bn_link:hover{
+    color: brown;
 }
