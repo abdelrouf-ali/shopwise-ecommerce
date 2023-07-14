@@ -17,6 +17,7 @@ import { SuppServicesComponent } from './supp-services/supp-services.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SaleSectionComponent } from './sale-section/sale-section.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 @NgModule({
@@ -32,7 +33,9 @@ import { SaleSectionComponent } from './sale-section/sale-section.component';
     HeroCarouselComponent,
     SuppServicesComponent,
     FooterComponent,
-    SaleSectionComponent
+    SaleSectionComponent,
+    UserProfileComponent,
+    
   ],
   imports: [
     BrowserModule,
