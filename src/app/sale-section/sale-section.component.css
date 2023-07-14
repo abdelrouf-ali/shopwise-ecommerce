@@ -18,6 +18,9 @@
 }
 .sale-banner{
     overflow: hidden;
+    padding: 0 !important;
+    width: 100%;
+ 
 }
 
 .sale-banner:hover img{
