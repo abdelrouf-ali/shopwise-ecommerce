@@ -2,3 +2,12 @@
     background-color:#202325 !important;
     color: antiquewhite !important;
 }
+input{
+    border-radius: 50px;
+    padding: 10px;
+    width: 300px;
+    
+}
+a{
+    text-decoration: none;
+}
