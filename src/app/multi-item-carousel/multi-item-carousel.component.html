@@ -1,28 +1,9 @@
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="../assets/images/banner7.jpg" alt="Image 1" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="../assets/images/banner8.jpg" alt="Image 2" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="../assets/images/banner9.jpg" alt="Image 3" class="img-fluid">
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="../assets/images/banner7.jpg" alt="Image 4" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="../assets/images/banner8.jpg" alt="Image 5" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="../assets/images/banner9.jpg" alt="Image 6" class="img-fluid">
+                <div class="col-md-4" *ngFor="let image of images">
+                    <img src="{{image}}" alt="Image" class="img-fluid">
                 </div>
             </div>
         </div>
