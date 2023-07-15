@@ -1,7 +1,8 @@
 .flex-box{
     display: flex;
-    width: 1000px;
+    width: 100%;
     margin: 20px auto;
+    overflow-x: hidden;
 
 }
 
@@ -18,9 +19,9 @@
 }
 
 .images{
-  display:flex;
-  justify-content: space-between ; 
-  width: 50%;
+  display:flex !important;
+  justify-content: space-between !important; 
+  width: 50% !important;
   margin-top: 15px;
 }
 
@@ -82,11 +83,8 @@
     margin: 0 10px;
     
 }
-.btn-box button{
-    width: 60%;
-    height: 50px;
-    
-
+.psize:hover{
+    background-color: rgba(66, 66, 66, 0.397);
 }
 
 
