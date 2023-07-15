@@ -1,4 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
 declare var $: any;
 
 @Component({
@@ -7,8 +9,32 @@ declare var $: any;
   styleUrls: ['./multi-item-carousel.component.css']
 })
 export class MultiItemCarouselComponent {
-
-  images: string[] = [
+  carouselOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: true
+  }
+    images: string[] = [
     '../assets/images/banner7.jpg',
     '../assets/images/banner7.jpg',
     '../assets/images/banner7.jpg',
@@ -16,28 +42,4 @@ export class MultiItemCarouselComponent {
     '../assets/images/banner7.jpg',
     '../assets/images/banner7.jpg'
   ];
-
-  constructor() { }
-
-  ngAfterViewInit(): void {
-    $(document).ready(() => {
-      const itemsPerSlide = 3; // Adjust this value according to the number of items per slide
-      const totalItems = $('.carousel-item').length;
-
-      if (totalItems > itemsPerSlide) {
-        const slidesToShow = Math.ceil(totalItems / itemsPerSlide);
-
-        $('.carousel-inner').addClass('multi-item');
-
-        for (let i = 0; i < slidesToShow; i++) {
-          const items = $('.carousel-item').slice(i * itemsPerSlide, (i * itemsPerSlide) + itemsPerSlide);
-
-          const innerWrapper = $('<div class="carousel-item"></div>');
-          items.wrapAll(innerWrapper);
-        }
-      }
-    });
-
-    $('#myCarousel').carousel();
-  }
 }

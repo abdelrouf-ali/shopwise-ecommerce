@@ -13,19 +13,19 @@
 
 </div> -->
 
-<div class="mt-5 pt-3">
-  <div class="d-flex justify-content-between ">
-    <h2 class="ms-5 ">Products details</h2>
-    <div class="url mx-5">Home > Product > T-Shirts</div>
+<div class="container  mt-5 pt-3">
+  <div class="d-flex justify-content-center  " style="background-color: rgb(236, 236, 236);">
+    <h2 class="ms-5 mx-5">Products details</h2>
+    <div class="url mx-5"><a routerLink="/">Home</a> > Product > T-Shirts</div>
   </div>
   
-  <div class="flex-box">
+  <div class="row flex-box col-md-2">
     <div class="left">
-      <div class="big-img">
+      <div class="big-img ">
         <img [src]="product.image" [alt]="product.title" >
       </div>
-      <div class="images">
-        <div class="small-img">
+      <div class="images ">
+        <div class="small-img ">
           <img [src]="product.image" [alt]="product.title" >
         </div>
         <div class="small-img">
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="right">
+    <div class="right col-md-3 ">
       
       <div class="p-name">{{ product.title }}</div>
       <div class="ratings">
@@ -51,15 +51,15 @@
         <fa-icon [icon]="Star"></fa-icon>
   
         <div class="price">{{ product.price }}$</div>
-        <div class="size">
+        <div class="size col-md-2">
           <P>Size :</P>
-          <div class="psize">S</div>
-          <div class="psize">M</div>
-          <div class="psize">L</div>
-          <div class="psize">XL</div>
+          <div class="psize col-md-2">S</div>
+          <div class="psize col-md-2">M</div>
+          <div class="psize col-md-2">L</div>
+          <div class="psize col-md-2">XL</div>
   
         </div>
-        <div class="btn-box">
+        <div class="btn-box ">
           <button type="button" class="btn btn-outline-danger" (click)=addtocart(product)>add to cart</button>
   
         </div>

@@ -1,4 +1,6 @@
 {
+  "homepage": "http://amrhossamo.github.io/shopwise-ecommerce",
+
   "name": "angular-app",
   "version": "0.0.0",
   "scripts": {
@@ -6,7 +8,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +37,7 @@
     "@angular/cli": "^16.1.4",
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
+    "gh-pages": "^5.0.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

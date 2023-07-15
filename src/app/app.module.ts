@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -18,7 +19,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SaleSectionComponent } from './sale-section/sale-section.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MultiItemCarouselComponent } from './multi-item-carousel/multi-item-carousel.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -44,7 +45,9 @@ import { MultiItemCarouselComponent } from './multi-item-carousel/multi-item-car
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CarouselModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
