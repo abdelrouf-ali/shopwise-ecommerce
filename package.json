@@ -1,6 +1,5 @@
 {
-  "homepage": "",
-
+  "homepage": "https://abdelrouf-ali.github.io/shopwise-ecommerce/",
   "name": "angular-app",
   "version": "0.0.0",
   "scripts": {
@@ -9,8 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
@@ -36,7 +35,9 @@
     "@angular-devkit/build-angular": "^16.0.4",
     "@angular/cli": "^16.1.4",
     "@angular/compiler-cli": "^16.0.0",
+    "@jefiozie/ngx-aws-deploy": "^4.1.0",
     "@types/jasmine": "~4.3.0",
+    "angular-cli-ghpages": "^0.6.2",
     "gh-pages": "^5.0.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
